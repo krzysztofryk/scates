@@ -28,6 +28,9 @@
             <url>http://scala-tools.org/repo-releases</url>
         </pluginRepository>
     </pluginRepositories>
+    <properties>
+        <chrome.driver>/home/kryk/development/tools/chromedriver</chrome.driver>
+    </properties>
     <build>
         <testSourceDirectory>src/test/scala</testSourceDirectory>
         <plugins>
@@ -59,6 +62,9 @@
                 <configuration>
                     <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
                     <stdout>W</stdout>
+                    <systemProperties>
+                        <webdriver.chrome.driver>${chrome.driver}</webdriver.chrome.driver>
+                    </systemProperties>
                 </configuration>
                 <executions>
                     <execution>

@@ -1,14 +1,14 @@
+import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.WebDriver
 import org.scalatest.selenium.WebBrowser
 import org.scalatest.{Matchers, FlatSpec, GivenWhenThen}
-import org.openqa.selenium.htmlunit.HtmlUnitDriver
 
 /**
  * User: krzysztof.ryk@solsoft.pl
  * Date: 7/11/14 9:24 AM
  */
 class SiteSpec extends FlatSpec with GivenWhenThen with Matchers with WebBrowser {
-  implicit val webDriver: WebDriver = new HtmlUnitDriver
+  implicit val webDriver: WebDriver = new ChromeDriver()
 
   "My Website" should "search for a given term" in {
     go to ("http://www.hascode.com/")
