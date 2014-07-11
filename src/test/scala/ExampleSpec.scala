@@ -1,6 +1,6 @@
 import org.scalatest.WordSpec
 
-class SetSpec extends WordSpec {
+class ExampleSpec extends WordSpec {
 
   "A Set" when {
     "empty" should {
