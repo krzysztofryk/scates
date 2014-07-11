@@ -1,5 +1,5 @@
-import org.scalatest.{FunSuite, Matchers}
 import org.scalatest.selenium.HtmlUnit
+import org.scalatest.{Matchers, FunSuite}
 
 class BlogSpec extends FunSuite with Matchers with HtmlUnit {
 
